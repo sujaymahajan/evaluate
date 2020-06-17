@@ -1,0 +1,14 @@
+jupyterlab:
+    title: "JupyterLab (Beta)"
+    iconUrl: "/assets/images/workspace-logos/jupyterlab.svg"
+    start: [  "/var/opt/workspaces/Jupyterlab/start.sh" ]
+    httpProxy:
+        internalPath: "/{{ownerUsername}}/{{projectName}}/{{sessionPathComponent}}/{{runId}}"
+        port: 8888
+        rewrite: false
+vscode:
+ title: "vscode"
+ iconUrl: "https://raw.github.com/dominodatalab/workspace-configs/develop/workspace-logos/vscode.svg?sanitize=true"
+ start: [ "/var/opt/workspaces/vscode/start" ]
+ httpProxy:
+    port: 8888
